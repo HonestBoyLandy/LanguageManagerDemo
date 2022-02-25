@@ -18,7 +18,7 @@ namespace LanguageManagerTest
         {
             await _dialogHostService.ShowMessageAsync(
                 dialogIdentifier: MainDialogHostIdentifier,
-                message: $"{LanguageService["Message"]}",
+                message: $"{LanguageService["Message"]}", //LanguageService.Default[nameof(Resources.Message)]
                 isNegativeButtonVisible: false);
         }
 
